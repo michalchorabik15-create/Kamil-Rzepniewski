@@ -1,0 +1,6 @@
+{
+  "name": "Baza Leadów i Planer Kampanii Web & SEO",
+  "description": "Profesjonalna platforma do optymalizacji i sprzedaży stron internetowych, SEO, CRO i GBP dla branży budowlanej, wykończeniowej i remontowej. Analiza, scoring, audyty i generowanie skryptów outbound.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

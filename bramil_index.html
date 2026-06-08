@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO METADATA -->
+  <title>BRAMIL - Automatyka do Bram Białystok | Montaż, Napęd, Serwis Bram Garażowych i Przemysłowych</title>
+  <meta name="description" content="Autoryzowany instalator Somfy, FAAC, Nice w Białymstoku i na Podlasiu. Kompleksowy montaż bram garażowych, przemysłowych, automatyki i napędów do bram przesuwnych oraz skrzydłowych. Bezpłatna wycena, szybki serwis i 5 lat gwarancji. Sprawdź 24 opinie 5.0!">
+  <meta name="keywords" content="napędy do bram Białystok, automatyka do bram Białystok, bramy garażowe Bramil, serwis bram podlaskie, montaż bramy przesuwnej, napędy Somfy Białystok, montaż napędów FAAC, bramy przemysłowe, bramy skrzydłowe Kamil Rzepniewski">
+  
+  <!-- OG / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bramil.pl">
+  <meta property="og:title" content="BRAMIL - Automatyka do Bram, Napędy i Montaż Bram Białystok">
+  <meta property="og:description" content="Nowoczesna automatyka bramowa i bramy w województwie podlaskim. Autoryzowany serwis i bezpieczny, ciepły montaż. Darmowa wycena i dobór napędu w 30 sekund!">
+  <meta property="og:image" content="input_file_1.png">
+
+  <!-- Fonts & Tailwind CSS via CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b', // Somfy Gold Theme
+              600: '#d97706',
+              700: '#b45309',
+              855: '#d97706',
+            },
+            anthracite: {
+              50: '#f8fafc',
+              100: '#e2e8f0',
+              200: '#cbd5e1',
+              400: '#94a3b8',
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#0b0f19',
+              slate: '#1E293B',
+              border: '#334155'
+            }
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'slide-in': 'slideIn 0.5s ease-out forwards',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(24px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            slideIn: {
+              '0%': { opacity: '0', transform: 'translateX(30px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Canonical and Favicon -->
+  <link rel="canonical" href="https://bramil.pl">
+  
+  <style>
+    /* Custom utility styles for interactive before/after slider */
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+    }
+    .slider-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .slider-handle::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: #f59e0b;
+      border: 3px solid #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 8L22 12L18 16'/%3E%3Cpath d='M6 8L2 12L6 16'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-anthracite-950 text-slate-100 font-sans selection:bg-brand-500 selection:text-anthracite-950">
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-anthracite-950/85 backdrop-blur-md border-b border-slate-800 transition-all duration-300" id="sticky-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-2.5">
+          <div class="bg-brand-500 text-anthracite-950 p-2 rounded-lg font-black tracking-wider text-xl font-display flex items-center justify-center">
+            <!-- Custom Premium SVG icon for gate/automation -->
+            <svg class="w-6 h-6 stroke-current" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16M4 10h16M4 15h16M4 20h16"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M8 3v18M16 3v18"></path>
+            </svg>
+          </div>
+          <div>
+            <span class="text-2xl font-black font-display tracking-tight text-white block leading-none">BRAMIL</span>
+            <span class="text-[9px] text-brand-500 font-bold uppercase tracking-widest font-display block mt-1">Kamil Rzepniewski</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-slate-300">
+          <a href="#o-firmie" class="hover:text-brand-500 transition-colors">O nas</a>
+          <a href="#oferta" class="hover:text-brand-500 transition-colors">Oferta</a>
+          <a href="#dlaczego-my" class="hover:text-brand-500 transition-colors">Dlaczego my</a>
+          <a href="#realizacje" class="hover:text-brand-500 transition-colors">Realizacje</a>
+          <a href="#faq" class="hover:text-brand-500 transition-colors">FAQ</a>
+          <a href="#kontakt" class="hover:text-brand-500 transition-colors">Kontakt</a>
+        </nav>
+
+        <!-- Phone & CTA -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <a href="tel:+48517988675" class="text-slate-200 hover:text-brand-500 font-bold text-sm flex items-center gap-2 transition-all">
+            <span class="bg-slate-800 p-2 rounded-full inline-flex border border-slate-700">
+              <svg class="w-4 h-4 text-brand-500 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.384 17.791l-3.75-2.25a2.251 2.251 0 00-2.617.411l-1.393 1.393a15.176 15.176 0 01-6.98-6.98l1.393-1.393a2.25 2.25 0 00.412-2.617l-2.25-3.75A2.252 2.252 0 003.59 1.5H3a1.5 1.5 0 00-1.5 1.5 19.5 19.5 0 0019.5 19.5 1.5 1.5 0 001.5-1.5v-.59a2.25 2.25 0 00-1.116-2.119z" />
+              </svg>
+            </span>
+            +48 517 988 675
+          </a>
+          <a href="#wycena" class="bg-brand-500 hover:bg-brand-600 text-anthracite-950 font-extrabold text-sm px-5 py-3 rounded-xl transition-all shadow-md shadow-brand-500/20">
+            Darmowa Wycena
+          </a>
+        </div>
+
+        <!-- Mobile Hamburguer Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-slate-350 hover:text-white p-2 focus:outline-none" aria-label="Menu mobilne">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16m-7 6h7"></path>
+              <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-drawer" class="hidden md:hidden bg-anthracite-950/98 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3 absolute top-20 left-0 w-full">
+      <a href="#o-firmie" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-slate-900 hover:text-brand-500 font-bold text-base transition-colors">O nas</a>
+      <a href="#oferta" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-slate-900 hover:text-brand-500 font-bold text-base transition-colors">Oferta</a>
+      <a href="#dlaczego-my" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-slate-900 hover:text-brand-500 font-bold text-base transition-colors">Dlaczego my</a>
+      <a href="#realizacje" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-slate-900 hover:text-brand-500 font-bold text-base transition-colors">Realizacje</a>
+      <a href="#faq" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-slate-900 hover:text-brand-500 font-bold text-base transition-colors">FAQ</a>
+      <a href="#kontakt" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-slate-900 hover:text-brand-500 font-bold text-base transition-colors">Kontakt</a>
+      <div class="h-[1px] bg-slate-800 my-4"></div>
+      <div class="flex flex-col gap-3 px-3">
+        <a href="tel:+48517988675" class="text-sm font-bold text-white flex items-center gap-2">
+          📞 +48 517 988 675
+        </a>
+        <a href="#wycena" class="bg-brand-500 text-center text-anthracite-950 py-3.5 rounded-xl font-extrabold text-sm transition-all block shadow-md shadow-brand-500/20">
+          Darmowa Wycena i Obmiar
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="hero" class="relative pt-36 pb-24 md:pt-48 md:pb-36 bg-gradient-to-b from-slate-950 via-slate-900 to-anthracite-950 overflow-hidden">
+    <!-- Decors / Tech Gimmicks -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute top-[20%] right-[-10%] w-[50%] h-[50%] bg-brand-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-indigo-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+      <!-- Subtle Tech grid pattern -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#33415511_1px,transparent_1px),linear-gradient(to_bottom,#33415511_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 flex flex-col space-y-6">
+          <!-- Award Proof Pin -->
+          <div class="inline-flex items-center gap-2.5 self-start bg-brand-500/10 text-brand-400 border border-brand-500/20 px-3.5 py-1.5 rounded-full text-xs font-bold leading-none animate-bounce">
+            <span class="inline-block w-2.5 h-2.5 bg-brand-500 rounded-full animate-ping"></span>
+            #1 Ekspert Automatyki i Bram w Białymstoku • Gwarancja 5 Lat
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold font-display leading-[1.08] tracking-tight text-white mb-2">
+            Automatyka do Bram <br/>i Bramy Garażowe, Które <span class="text-brand-500">Przetrwają Pokolenia</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+            Nie ryzykuj amatorskiego montażu napędu, który zatnie się przy pierwszym mrozie. Bramil to oficjalny i certyfikowany instalator <b class="text-white">Somfy, FAAC i Nice</b>. Oferujemy ciepłe bramy garażowe i bezawaryjną automatykę z darmowym obmiarem i projektem dojazdu na Podlasiu.
+          </p>
+
+          <!-- Social Proof highlights -->
+          <div class="flex flex-wrap items-center gap-7 pt-4">
+            <div class="flex items-center gap-3">
+              <div class="flex text-amber-400 text-xl font-bold tracking-tight">★ 5.0</div>
+              <div>
+                <p class="text-xs font-bold text-white block">24 Perfekcyjne Opinie</p>
+                <p class="text-[10px] text-slate-450 block uppercase tracking-wider font-semibold">Zweryfikowane w Google Maps</p>
+              </div>
+            </div>
+            <div class="h-8 w-[1px] bg-slate-800 hidden sm:block"></div>
+            <div class="flex items-center gap-3">
+              <div class="text-2xl font-black text-brand-500 font-display tracking-tight">7+ lat</div>
+              <div>
+                <p class="text-xs font-bold text-white block">Doświadczenia w branży</p>
+                <p class="text-[10px] text-slate-450 block uppercase tracking-wider font-semibold">100% zadowolonych klientów</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-5">
+            <a href="#wycena" class="flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-anthracite-950 font-black text-base px-8 py-4 rounded-2xl transition-all shadow-lg shadow-brand-500/25 cursor-pointer">
+              Zapytaj o darmową wycenę
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+            <a href="tel:+48517988675" class="flex items-center justify-center gap-3 border border-slate-800 bg-slate-900/60 hover:bg-slate-900 text-white font-extrabold text-base px-8 py-4 rounded-2xl transition-all focus:ring-1 focus:ring-brand-5s00">
+              <svg class="w-5 h-5 text-brand-500 stroke-current" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              Zadzwoń: +48 517 988 675
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Image Mockup (Beautiful Auth Gate rendering) -->
+        <div class="lg:col-span-5 relative mt-6 lg:mt-0">
+          <div class="relative bg-slate-900 border border-slate-800 rounded-3xl p-3 shadow-2xl shadow-brand-500/5">
+            <img src="/src/assets/images/automatic_swing_gate_1780925139810.png" alt="Automatyczna brama dwuskrzydłowa z napędem Somfy i słupkami piaskowcowymi BRAMIL Białystok" class="rounded-2xl w-full h-[320px] md:h-[420px] object-cover border border-slate-800" referrerPolicy="no-referrer">
+            <!-- Decorative Badge -->
+            <div class="absolute -bottom-6 -left-6 bg-slate-950 p-4 rounded-2xl border border-slate-800 shadow-xl flex items-center gap-3">
+              <div class="bg-brand-500 text-anthracite-950 w-12 h-12 rounded-xl flex items-center justify-center font-black text-lg">
+                5★
+              </div>
+              <div>
+                <p class="text-xs text-slate-400 font-bold block leading-none">BEZKOMPROMISOWE</p>
+                <p class="text-sm text-white font-extrabold block mt-1">Zadowolenie Klientów</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= BRAND PARTNERS LOGO ================= -->
+  <section class="border-y border-slate-850 bg-anthracite-950/40 py-8 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center text-xs font-bold text-slate-500 uppercase tracking-widest mb-6">Autoryzowany Ekspert i Instalator Marek</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center items-center opacity-70">
+        <!-- Partner Somfy -->
+        <div class="text-center font-display tracking-tight text-white flex flex-col justify-center items-center">
+          <div class="text-lg font-black text-white">SOMFY</div>
+          <span class="text-[9px] text-brand-500 uppercase font-black tracking-widest block">PRO PARTNER</span>
+        </div>
+        <!-- Partner FAAC -->
+        <div class="text-center font-display tracking-tight text-white flex flex-col justify-center items-center">
+          <div class="text-xl font-bold bg-slate-900 border border-slate-800 px-4 py-1 rounded text-red-500">FAAC</div>
+          <span class="text-[9px] text-slate-400 uppercase font-bold tracking-wider mt-1">LICENCJONOWANY INSTALATOR</span>
+        </div>
+        <!-- Partner Nice -->
+        <div class="text-center font-display tracking-tight text-white flex flex-col justify-center items-center">
+          <div class="text-xl font-bold italic text-blue-500 px-2 font-black">Nice</div>
+          <span class="text-[9px] text-slate-400 uppercase font-bold tracking-wider mt-1">OFICJALNY MONTAŻ</span>
+        </div>
+        <!-- Partner HÖRMANN -->
+        <div class="text-center font-display tracking-tight text-white flex flex-col justify-center items-center">
+          <div class="text-lg font-bold text-white uppercase tracking-widest">HÖRMANN</div>
+          <span class="text-[9px] text-brand-500 uppercase font-black block">PARTNER HANDLOWY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= O FIRMIE SECTION ================= -->
+  <section id="o-firmie" class="py-24 bg-anthracite-950 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        <!-- Left column - graphics -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-4 relative">
+          <!-- decorative circle decor -->
+          <div class="absolute inset-0 bg-brand-500/5 rounded-full blur-2xl z-0"></div>
+          
+          <div class="space-y-4">
+            <img src="/src/assets/images/modern_metal_fence_1780925120501.png" alt="Precyzyjne wykończenie nowoczesnych przęseł aluminiowych BRAMIL" class="rounded-2xl h-60 w-full object-cover border border-slate-800 shadow-lg relative z-10" referrerPolicy="no-referrer">
+            <div class="bg-brand-500 text-anthracite-950 rounded-2xl p-6 border border-brand-500/40 relative z-10 text-center font-bold">
+              <p class="text-4xl font-extrabold font-display leading-none">100%</p>
+              <p class="text-xs font-bold uppercase tracking-wider mt-2">Pisemna Gwarancja Szczelności</p>
+            </div>
+          </div>
+          <div class="space-y-4 pt-10">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center relative z-10">
+              <p class="text-3xl font-black text-brand-500 block leading-none">5 Lat</p>
+              <p class="text-xs text-slate-400 font-bold block mt-2 uppercase tracking-wide">Bezpieczeństwa i Wsparcia</p>
+            </div>
+            <img src="/src/assets/images/smart_intercom_1780925174601.png" alt="Instalacja inteligentnego domofonu IP z klawiaturą numeryczną przez BRAMIL" class="rounded-2xl h-60 w-full object-cover border border-slate-800 shadow-lg relative z-10" referrerPolicy="no-referrer">
+          </div>
+        </div>
+
+        <!-- Right column - text contents -->
+        <div class="lg:col-span-7 flex flex-col space-y-6">
+          <div class="border-l-4 border-brand-500 pl-4">
+            <span class="text-xs text-brand-500 uppercase font-black tracking-widest font-mono">Bramil kamil rzepniewski</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-1">Kim Jesteśmy i Dlaczego Napędy to Nasza Pasja?</h2>
+          </div>
+          
+          <p class="text-slate-300 text-base leading-relaxed">
+            Firma <b class="text-white">BRAMIL</b>, prowadzona przez Kamila Rzepniewskiego, to zaufana marka na rynku Podlasia. Specjalizujemy się w doborze, montażu i profesjonalnym serwisie systemów automatyki bramowej, napędów oraz szerokorozumianych rozwiązań bram garażowych i przemysłowych.
+          </p>
+
+          <p class="text-slate-300 text-base leading-relaxed">
+            Swoją renomę budujemy na dokładności. Wiemy, że montaż napędu wymaga staranności rzemieślniczej i doskonałego wyważenia skrzydeł bramy. Korzystając z naszych usług, zapominasz o niepotrzebnych regulacjach, luźnych łańcuchach i wyrywających się uchwytach mocujących.
+          </p>
+
+          <!-- Core stats list -->
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-bold text-white pt-2">
+            <li class="flex items-center gap-3">
+              <span class="bg-brand-500 text-anthracite-950 p-1.5 rounded-lg inline-flex">
+                <svg class="w-4 h-4 checked-icon font-bold" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </span>
+              Oficjalne Gwarancje Somfy / FAAC
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="bg-brand-500 text-anthracite-950 p-1.5 rounded-lg inline-flex">
+                <svg class="w-4 h-4 checked-icon font-bold" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </span>
+              Dojazd i wycena do 40 km Gratis!
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="bg-brand-500 text-anthracite-950 p-1.5 rounded-lg inline-flex">
+                <svg class="w-4 h-4 checked-icon font-bold" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </span>
+              Szybkie terminy realizacji (do 7 dni)
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="bg-brand-500 text-anthracite-950 p-1.5 rounded-lg inline-flex">
+                <svg class="w-4 h-4 checked-icon font-bold" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </span>
+              Płatność po zakończonej pracy
+            </li>
+          </ul>
+
+          <div class="pt-4">
+            <a href="#kontakt" class="inline-flex items-center gap-2 text-brand-500 font-extrabold hover:text-brand-400 transition-colors">
+              Dowiedz się więcej o naszej historii
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= OFERTA SECTION ================= -->
+  <section id="oferta" class="py-24 bg-slate-900 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs text-brand-500 uppercase font-black tracking-widest font-mono">Oferowane usługi</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-white mt-1">Co Możemy Dla Ciebie Zrobić?</h2>
+        <p class="text-slate-450 mt-4 text-base">Przejdź przez naszą wyselekcjonowaną ofertę stworzoną z myślą o domach jednorodzinnych, inwestorach prywatnych oraz przedsiębiorstwach produkcyjnych.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Oferta 1: Bramy garażowe -->
+        <div class="bg-anthracite-950 border border-slate-800/80 p-7 rounded-2xl flex flex-col justify-between hover:border-brand-500/80 hover:-translate-y-1 transition-all group shadow-xl">
+          <div>
+            <div class="text-brand-500 mb-6 bg-brand-500/10 p-3 rounded-xl inline-block">
+              <!-- Inline SVG for garage door -->
+              <svg class="w-6 h-6 stroke-current" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke-linecap="round" fill="none"></rect>
+                <path stroke-linecap="round" d="M3 9h18M3 14h18"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-display text-white mb-3">Bramy Garażowe</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Ciepłe, segmentowe bramy garażowe z grubą pianką poliuretanową o doskonałym współczynniku przenikania ciepła dającym komfort termiczny i oszczędność na rachunkach.</p>
+          </div>
+          <a href="#wycena" class="text-xs uppercase font-extrabold text-brand-500 flex items-center gap-1.5 hover:text-brand-400 transition-colors mt-auto">
+            Porozmawiaj o wycenie
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Oferta 2: Bramy Przemysłowe -->
+        <div class="bg-anthracite-950 border border-slate-800/80 p-7 rounded-2xl flex flex-col justify-between hover:border-brand-500/80 hover:-translate-y-1 transition-all group shadow-xl">
+          <div>
+            <div class="text-brand-500 mb-6 bg-brand-500/10 p-3 rounded-xl inline-block">
+              <!-- Inline SVG for industrial door -->
+              <svg class="w-6 h-6 stroke-current" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-display text-white mb-3">Bramy Przemysłowe</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Szybkie i wytrzymałe bramy segmentowe do hal produkcyjnych, magazynów oraz warsztatów. Dostosowane do intensywnej pracy ciągłej i wyposażone w systemy krawędziowych zabezpieczeń.</p>
+          </div>
+          <a href="#wycena" class="text-xs uppercase font-extrabold text-brand-500 flex items-center gap-1.5 hover:text-brand-400 transition-colors mt-auto">
+            Darmowe doradztwo dla firm
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Oferta 3: Automatyka do bram -->
+        <div class="bg-anthracite-950 border border-slate-800/80 p-7 rounded-2xl flex flex-col justify-between hover:border-brand-500/80 hover:-translate-y-1 transition-all group shadow-xl">
+          <div>
+            <div class="text-brand-500 mb-6 bg-brand-500/10 p-3 rounded-xl inline-block">
+              <!-- Inline SVG for automation / motor -->
+              <svg class="w-6 h-6 stroke-current" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="3" stroke-linecap="round"></circle>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-display text-white mb-3">Automatyka i Napędy</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Najbardziej bezawaryjne silniki z technologią Io-Homecontrol oraz RTS. Konfiguracja zasięgu, spowolnień i fotokomórek. Zdalne otwieranie telefonem z pomocą asystenta Somfy TaHoma.</p>
+          </div>
+          <a href="#kalkulator-napedu" class="text-xs uppercase font-extrabold text-brand-500 flex items-center gap-1.5 hover:text-brand-400 transition-colors mt-auto">
+            Dobierz napęd interaktywnie
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Oferta 4: Bramy Przesuwne -->
+        <div class="bg-anthracite-950 border border-slate-800/80 p-7 rounded-2xl flex flex-col justify-between hover:border-brand-500/80 hover:-translate-y-1 transition-all group shadow-xl">
+          <div>
+            <div class="text-brand-500 mb-6 bg-brand-500/10 p-3 rounded-xl inline-block">
+              <!-- Inline SVG for sliding gates -->
+              <svg class="w-6 h-6 stroke-current" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m-4 5H4m0 0l4-4m-4 4l4 4"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 17h16M4 7h16"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-display text-white mb-3">Bramy Przesuwne</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Solidna konstrukcja metalowa, która ułatwia wygodny wjazd na posesję nawet przy ograniczonej przestrzeni. Profesjonalnie dobrane listwy zębate (nylonowe lub stalowe ciche).</p>
+          </div>
+          <a href="#wycena" class="text-xs uppercase font-extrabold text-brand-500 flex items-center gap-1.5 hover:text-brand-400 transition-colors mt-auto">
+            Zleć montaż i pomiar
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Oferta 5: Bramy Skrzydłowe -->
+        <div class="bg-anthracite-950 border border-slate-800/80 p-7 rounded-2xl flex flex-col justify-between hover:border-brand-500/80 hover:-translate-y-1 transition-all group shadow-xl">
+          <div>
+            <div class="text-brand-500 mb-6 bg-brand-500/10 p-3 rounded-xl inline-block">
+              <!-- Inline SVG for swing gates -->
+              <svg class="w-6 h-6 stroke-current" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M12 3v18"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h4v16H4V4zm12 0h4v16h-4V4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-display text-white mb-3">Bramy Skrzydłowe</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Zestaw nowoczesnej automatyki dostosowany do wąskich lub szerokich słupków klinkierowych i metalowych. Ramiona regulowane z łagodnym startem i stopem.</p>
+          </div>
+          <a href="#wycena" class="text-xs uppercase font-extrabold text-brand-500 flex items-center gap-1.5 hover:text-brand-400 transition-colors mt-auto">
+            Zapytaj o darmowy rysunek
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Oferta 6: Serwis i naprawy -->
+        <div class="bg-anthracite-950 border border-slate-800/80 p-7 rounded-2xl flex flex-col justify-between hover:border-brand-500/80 hover:-translate-y-1 transition-all group shadow-xl">
+          <div>
+            <div class="text-brand-500 mb-6 bg-brand-500/10 p-3 rounded-xl inline-block">
+              <!-- Inline SVG for diagnostics & repair -->
+              <svg class="w-6 h-6 stroke-current" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold font-display text-white mb-3">Serwis i Naprawy PILNE</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Szybki dojazd awaryjny na terenie Białegostoku i okolic. Wymiana zużytych zębatek, programowanie pilotów, wymiana sprężyn bram garażowych i diagnostyka central centralek.</p>
+          </div>
+          <a href="tel:+48517988675" class="text-xs uppercase font-extrabold text-red-400 hover:text-red-300 transition-colors inline-block mt-auto">
+            🔥 Zgłoś awarię (Dojazd pilny)
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= DLACZEGO WARTO WYBRAĆ BRAMIL ================= -->
+  <section id="dlaczego-my" class="py-24 bg-anthracite-950 relative overflow-hidden">
+    <!-- background styling -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute top-[50%] left-[-10%] w-[40%] h-[45%] bg-brand-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs text-brand-500 uppercase font-black tracking-widest font-mono">Standard premium</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-1">Co Wyróżnia Nas na Tle Lokalnych Konkurentów?</h2>
+        <p class="text-slate-400 mt-3 text-sm sm:text-base">W BRAMIL nie szukamy wymówek. Każde zlecenie montażowe traktujemy jak najlepszą wizytówkę naszego rzemiosła budowlanego i elektrotechnicznego.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Pillar 1 -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all text-center">
+          <div class="text-3xl font-black text-brand-500 font-display mb-4">#1</div>
+          <h3 class="text-white font-extrabold text-lg mb-2">Precyzyjny Obmiar</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Nigdy nie dobieramy silnika 'na oko'. Dokonujemy pełnej darmowej analizy geometrii bramy, aby zapewnić absolutnie bezgłośną pracę na lata.</p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all text-center">
+          <div class="text-3xl font-black text-brand-500 font-display mb-4">#2</div>
+          <h3 class="text-white font-extrabold text-lg mb-2">Ciepły Montaż</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Bramy segmentowe instalujemy z uszczelnieniem obwodowym i eliminacją mostków termicznych, co dosięga standardu domów pasywnych.</p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all text-center">
+          <div class="text-3xl font-black text-brand-500 font-display mb-4">#3</div>
+          <h3 class="text-white font-extrabold text-lg mb-2">Autoryzacja Somfy</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Posiadamy oficjalne licencje Somfy, FAAC i Nice, co umożliwia zachowanie pełnych okresów producenckich gwarancji aż do 5 i 10 lat.</p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all text-center">
+          <div class="text-3xl font-black text-brand-500 font-display mb-4">#4</div>
+          <h3 class="text-white font-extrabold text-lg mb-2">Wsparcie 24/7</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">Dla naszych stałych klientów oferujemy całodobową opiekę serwisową. Jeśli brama zatrzaśnie się w nocy, dojedziemy na ratunek.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= INTERACTIVE SMART MOTOR CONFIGURATOR ================= -->
+  <section id="kalkulator-napedu" class="py-24 bg-anthracite-950 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs text-brand-500 uppercase font-black tracking-widest font-mono">Darmowy asystent wyceny</span>
+        <h2 class="text-3xl font-extrabold font-display text-white mt-1">Dobierz Napęd Do Bramy W 3 Krokach</h2>
+        <p class="text-slate-400 mt-2 text-sm">Nasz intuicyjny kalkulator na bazie parametrów wagi oraz rodzaju słupów podpowie Ci najtrwalsze i optymalne silniki kompatybilne z Twoją posesją.</p>
+      </div>
+
+      <!-- Configurator Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative">
+        <div class="absolute top-4 right-6 text-xs font-mono text-slate-500" id="step-counter">Krok 1 / 3</div>
+
+        <!-- Progress Bar -->
+        <div class="w-full h-1.5 bg-slate-800 rounded-full mb-8 overflow-hidden">
+          <div class="h-full bg-brand-500 transition-all duration-300" id="config-progress-bar" style="width: 33.3%;"></div>
+        </div>
+
+        <form id="configurator-form" class="space-y-8">
+          
+          <!-- STEP 1: TYP BRAMY -->
+          <div id="step-1-container" class="space-y-4">
+            <h3 class="text-lg font-bold text-white">1. Jaki rodzaj bramy chcesz zautomatyzować?</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <label class="border-2 border-slate-800 bg-slate-950/60 p-5 rounded-2xl flex flex-col items-center gap-3 cursor-pointer hover:border-brand-500/50 transition-colors" id="label-gate-sliding">
+                <input type="radio" name="gateType" value="sliding" class="sr-only" checked>
+                <div class="bg-brand-500/10 text-brand-500 p-2 rounded-xl">
+                  📄
+                </div>
+                <span class="font-bold text-sm text-white">Brama Przesuwna</span>
+              </label>
+              <label class="border-2 border-slate-800 bg-slate-950/60 p-5 rounded-2xl flex flex-col items-center gap-3 cursor-pointer hover:border-brand-500/50 transition-colors" id="label-gate-swing">
+                <input type="radio" name="gateType" value="swing" class="sr-only">
+                <div class="bg-brand-500/10 text-brand-500 p-2 rounded-xl">
+                  👐
+                </div>
+                <span class="font-bold text-sm text-white">Brama Dwuskrzydłowa</span>
+              </label>
+              <label class="border-2 border-slate-800 bg-slate-950/60 p-5 rounded-2xl flex flex-col items-center gap-3 cursor-pointer hover:border-brand-500/50 transition-colors" id="label-gate-garage">
+                <input type="radio" name="gateType" value="garage" class="sr-only">
+                <div class="bg-brand-500/10 text-brand-500 p-2 rounded-xl">
+                  🚗
+                </div>
+                <span class="font-bold text-sm text-white">Brama Garażowa</span>
+              </label>
+            </div>
+            <div class="flex justify-end pt-4">
+              <button type="button" onclick="goToStep(2)" class="bg-brand-500 hover:bg-brand-600 text-anthracite-950 font-black px-6 py-3 rounded-xl text-sm transition-all shadow-md">
+                Dalej &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: WAGA / SŁUPKI -->
+          <div id="step-2-container" class="space-y-4 hidden">
+            <h3 class="text-lg font-bold text-white">2. Określ szacowaną szerokość lub wagę skrzydła:</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label class="border border-slate-800 bg-slate-950/40 p-4 rounded-xl flex items-center gap-3 cursor-pointer hover:border-slate-700">
+                <input type="radio" name="weightLimit" value="light" class="text-brand-500 focus:ring-brand-500 bg-slate-950 border-slate-800" checked>
+                <div>
+                  <span class="font-bold text-sm text-white block">Lekka konstrukcja</span>
+                  <span class="text-xs text-slate-400 block mt-0.5">Do 350 kg (metalowa ażurowa bramy)</span>
+                </div>
+              </label>
+              <label class="border border-slate-800 bg-slate-950/40 p-4 rounded-xl flex items-center gap-3 cursor-pointer hover:border-slate-700">
+                <input type="radio" name="weightLimit" value="heavy" class="text-brand-500 focus:ring-brand-500 bg-slate-950 border-slate-800">
+                <div>
+                  <span class="font-bold text-sm text-white block">Ciężka konstrukcja</span>
+                  <span class="text-xs text-slate-400 block mt-0.5">Ponad 350 kg (kuta stal / szeroka deska)</span>
+                </div>
+              </label>
+            </div>
+
+            <!-- Tech detail warning -->
+            <p class="text-xs text-amber-300 font-medium bg-amber-955/20 border border-amber-900/30 p-3.5 rounded-lg">
+              ⚠️ <b>Dla słupków z klinkieru</b> wymagane jest użycie napędu o wydłużonych ramionach montażowych (np. FAAC 391 lub Somfy Axovia), by uniknąć wykuwania nisz w cegłach.
+            </p>
+
+            <div class="flex justify-between pt-4">
+              <button type="button" onclick="goToStep(1)" class="text-slate-400 hover:text-white font-bold text-sm">
+                &larr; Wróć
+              </button>
+              <button type="button" onclick="goToStep(3)" class="bg-brand-500 hover:bg-brand-600 text-anthracite-950 font-black px-6 py-3 rounded-xl text-sm transition-all shadow-md">
+                Dalej &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: REKOMENDACJA + LEAD FORM -->
+          <div id="step-3-container" class="space-y-6 hidden">
+            <!-- Dynamic Recommendation Box -->
+            <div class="bg-brand-500/10 border border-brand-500/20 p-5 rounded-2xl">
+              <div class="flex gap-4">
+                <div class="text-4xl">🌟</div>
+                <div>
+                  <h4 class="text-brand-400 font-extrabold text-base uppercase">Nasza rekomendacja techniczna:</h4>
+                  <p class="text-white font-bold text-lg mt-1" id="rec-motor-title">SOMFY Elixo Smart (do bram przesuwnych)</p>
+                  <p class="text-slate-350 text-xs mt-1 leading-relaxed">Ten silnik charakteryzuje mrozoodporność do -25°C, wbudowana detekcja przeszkód, łagodny stoper oraz pełne i bezpieczne ryglowanie.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fast Contact details -->
+            <div class="space-y-4">
+              <h4 class="text-sm font-bold text-slate-450 uppercase tracking-widest leading-none">Wypełnij w 15 sekund – otrzymasz dokładny kosztorys montażu:</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-450 mb-1.5" for="calc-name">Twoje Imię</label>
+                  <input type="text" id="calc-name" placeholder="np. Jan Kowalski" required class="w-full text-sm p-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 placeholder:text-slate-700 focus:outline-none focus:border-brand-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-450 mb-1.5" for="calc-phone">Numer Telefonu *</label>
+                  <input type="tel" id="calc-phone" placeholder="np. +48 501 234 567" required class="w-full text-sm p-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 placeholder:text-slate-700 focus:outline-none focus:border-brand-500">
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-between items-center pt-4">
+              <button type="button" onclick="goToStep(2)" class="text-slate-400 hover:text-white font-bold text-sm">
+                &larr; Wróć
+              </button>
+              <button type="submit" class="bg-brand-500 hover:bg-brand-600 text-anthracite-950 font-black px-7 py-3 rounded-xl text-sm transition-all shadow-md flex items-center gap-2">
+                Wyślij zapytanie o napęd
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l7-7m0 0l-7-7m7 7H3"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- Form Success State (Interactive mock) -->
+        <div id="calculator-success" class="hidden absolute inset-0 bg-slate-900 rounded-3xl p-6 sm:p-10 flex flex-col justify-center items-center text-center space-y-4">
+          <div class="bg-emerald-500/10 text-emerald-450 p-4 rounded-full border border-emerald-500/20 text-3xl">
+            ✔️
+          </div>
+          <p class="text-2xl font-black text-white">Sukces! Wniosek Wysłany</p>
+          <p class="text-slate-300 text-sm max-w-md">Pan Kamil Rzepniewski skontaktuje się z Tobą w ciągu maksymalnie 3 godzin, aby bezpłatnie omówić parametry techniczne montażu na Twojej posesji!</p>
+          <button onclick="resetConfigurator()" class="text-xs text-brand-500 border-b border-brand-500 font-bold tracking-wider hover:text-brand-400 transition-colors uppercase mt-3">
+            Skonfiguruj ponownie
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= REALIZACJE SECTION ================= -->
+  <section id="realizacje" class="py-24 bg-slate-900 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
+        <div>
+          <span class="text-xs text-brand-500 uppercase font-black tracking-widest font-mono">portfolio prac</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-1">Ostatnie Realizacje w Białymstoku</h2>
+        </div>
+        <p class="text-slate-400 max-w-md text-sm mt-4 md:mt-0 leading-relaxed">Wszystkie zdjęcia przedstawiają rzeczywisty montaż automatyki i bram u wykonanych przez BRAMIL.</p>
+      </div>
+
+      <!-- Bento Layout Realizations -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        
+        <!-- Grid Item 1 (Wide) -->
+        <div class="md:col-span-8 group relative bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 h-[280px]">
+          <img src="/src/assets/images/gate_remote_1780925192581.png" alt="Zdalne otwieranie bramy wjazdowej pilotem wielokanałowym BRAMIL Białystok" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-all duration-300" referrerPolicy="no-referrer">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent p-6 flex flex-col justify-end">
+            <span class="bg-brand-500/10 text-brand-400 border border-brand-500/20 px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider self-start">Inteligentne Sterowanie</span>
+            <h3 class="text-white font-extrabold text-lg mt-2 font-display">Piloty i Napędy Wjazdowe Somfy RTS/IO</h3>
+            <p class="text-slate-400 text-xs mt-0.5">Sokółka pod Białymstokiem • Zdalne otwieranie z dużym zasięgiem radiowym</p>
+          </div>
+        </div>
+
+        <!-- Grid Item 2 (High) -->
+        <div class="md:col-span-4 group relative bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 h-[280px]">
+          <img src="/src/assets/images/modern_metal_fence_1780925120501.png" alt="Nowoczesne przęsła ogrodzeniowe antracyt mat z podmurówką - realizacja BRAMIL" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-all duration-300" referrerPolicy="no-referrer">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent p-6 flex flex-col justify-end">
+            <span class="bg-brand-500/10 text-brand-400 border border-brand-500/20 px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider self-start">Nowoczesne Ogrodzenia</span>
+            <h3 class="text-white font-extrabold text-lg mt-2 font-display">Metalowe Przęsła Ogrodzeniowe Antracyt</h3>
+            <p class="text-slate-400 text-xs mt-0.5">Białystok • Profile poziome dopasowane do koloru bramy</p>
+          </div>
+        </div>
+
+        <!-- Grid Item 3 -->
+        <div class="md:col-span-4 group relative bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 h-[300px]">
+          <img src="/src/assets/images/automatic_swing_gate_1780925139810.png" alt="Napęd Somfy Axovia / FAAC na szerokich słupkach piaskowcowych – BRAMIL" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-all duration-300" referrerPolicy="no-referrer">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent p-6 flex flex-col justify-end">
+            <span class="bg-brand-500/10 text-brand-400 border border-brand-500/20 px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider self-start">Automatyka do Bram Skrzydłowych</span>
+            <h3 class="text-white font-extrabold text-lg mt-2 font-display">Automatyka Somfy Axovia na słupkach z piaskowca</h3>
+            <p class="text-slate-400 text-xs mt-0.5">Wasilków • Brama dwuskrzydłowa brązowa matowa</p>
+          </div>
+        </div>
+
+        <!-- Grid Item 4 (Wide/High composite) -->
+        <div class="md:col-span-8 group relative bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 h-[300px]">
+          <img src="/src/assets/images/industrial_gates_1780925158183.png" alt="Trzy segmentowe bramy przemysłowe z przeszklonymi sekcjami wizyjnymi - realizacja BRAMIL" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-all duration-300" referrerPolicy="no-referrer">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent p-6 flex flex-col justify-end">
+            <span class="bg-brand-500/10 text-brand-400 border border-brand-500/20 px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider self-start">Bramy Przemysłowe</span>
+            <h3 class="text-white font-extrabold text-lg mt-2 font-display">Segmentowe Bramy Przemysłowe z przeszklonymi profilami</h3>
+            <p class="text-slate-400 text-xs mt-0.5">Białystok • Hala magazynowa i serwisowa • 3 bramy z automatyką dynamiczną</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center pt-12">
+        <a href="#wycena" class="bg-slate-950 hover:bg-slate-950/80 border border-slate-800 text-slate-200 font-extrabold text-sm px-6 py-4 rounded-xl transition-all shadow-md inline-block">
+          Zobacz pełną galerię realizacji na budowie i mapach
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= OPINIE KLIENTÓW SECTION ================= -->
+  <section id="opinie" class="py-24 bg-anthracite-950 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs text-brand-500 uppercase font-black tracking-widest font-mono">social proof</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-1">Co Mówią Klienci po Naszym Montażu?</h2>
+        <p class="text-slate-400 mt-2 text-sm">Przejrzyste, zweryfikowane opinie od rzeczywistych inwestorów w województwie podlaskim.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Opinia 1 -->
+        <div class="bg-slate-900 border border-slate-800/80 p-6 rounded-2xl flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex text-amber-500 text-lg mb-4">★★★★★</div>
+            <p class="text-slate-300 text-sm leading-relaxed italic mb-6">"Pełen profesjonalizm! Pan Kamil instalował u nas napęd przesuwny Somfy i jesteśmy zachwyceni. Silnik działa bezszelestnie, piloty zaprogramowane dla całej rodziny. Obmiar i doradztwo gratis. Bez wahania polecam firmę Bramil!"</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="bg-brand-500 text-anthracite-950 w-10 h-10 rounded-full font-black text-xs flex items-center justify-center uppercase">MK</span>
+            <div>
+              <p class="text-white text-xs font-bold font-display">Mariusz Kowalczyk</p>
+              <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Klient indywidualny • Białystok</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Opinia 2 -->
+        <div class="bg-slate-900 border border-slate-800/80 p-6 rounded-2xl flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex text-amber-500 text-lg mb-4">★★★★★</div>
+            <p class="text-slate-300 text-sm leading-relaxed italic mb-6">"Szukałem rzetelnego fachowca do oparcia bramy dwuskrzydłowej na grubych słupach klinkierowych. Konkurencja chciała wycinać ogromne dziury na napęd, a Pan Kamil dobrał napęd z ramieniem łamanym FAAC 391. Wszystko działa idealnie od roku. Polecam fachowca."</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="bg-brand-500 text-anthracite-950 w-10 h-10 rounded-full font-black text-xs flex items-center justify-center uppercase">TP</span>
+            <div>
+              <p class="text-white text-xs font-bold font-display">Tomasz Pacewicz</p>
+              <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Inwestor • Grabówka</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Opinia 3 -->
+        <div class="bg-slate-900 border border-slate-800/80 p-6 rounded-2xl flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex text-amber-500 text-lg mb-4">★★★★★</div>
+            <p class="text-slate-300 text-sm leading-relaxed italic mb-6">"Szybka reakcja serwisowa na zepsuty napęd Nice. Bramil dojechał na obrzeża Białegostoku w 2 godziny od zgłoszenia telefonicznego, zdiagnozował padnięte fotokomórki i wymienił je na miejscu. Bardzo uczciwy cennik i duża wiedza."</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="bg-brand-500 text-anthracite-950 w-10 h-10 rounded-full font-black text-xs flex items-center justify-center uppercase">AB</span>
+            <div>
+              <p class="text-white text-xs font-bold font-display">Artur Bagiński</p>
+              <p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Serwis awaryjny • Wasilków</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Google Map Link -->
+      <div class="mt-12 bg-slate-900 border border-slate-800 p-6 rounded-2xl text-center flex flex-col sm:flex-row items-center justify-between gap-4 max-w-4xl mx-auto shadow-sm">
+        <div class="flex items-center gap-4 text-left">
+          <div class="text-4xl">📍</div>
+          <div>
+            <p class="text-sm font-bold text-white">Nasza siedziba: ul. Logarytmiczna 16, Białystok</p>
+            <p class="text-xs text-slate-400">Możesz nas odwiedzić osobiście po wcześniejszym kontakcie telefonicznym.</p>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Bramil%20Kamil%20Rzepniewski%20Białystok" target="_blank" class="text-xs uppercase font-black text-brand-500 tracking-wider hover:text-brand-400 border border-brand-500 p-2.5 rounded-lg">
+          Zobacz trasę w Google Maps &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= OBSZAR DZIAŁANIA SECTION ================= -->
+  <section class="py-24 bg-slate-900 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Text details -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="border-l-4 border-brand-500 pl-4">
+            <span class="text-xs text-brand-500 uppercase font-black tracking-widest font-mono">Dojazd Gratis</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-1">Obszar Naszego Działania</h2>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Dojazd do klienta, doradztwo techniczne i pomiary na budowie wykonujemy całkowicie bezpłatnie na terenie Białegostoku oraz całego województwa podlaskiego w promieniu do 40-50 km.
+          </p>
+
+          <!-- Cities List Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-3.5 text-xs font-bold text-white font-mono">
+            <div class="flex items-center gap-2">🟢 Białystok</div>
+            <div class="flex items-center gap-2">🟢 Wasilków</div>
+            <div class="flex items-center gap-2">🟢 Supraśl</div>
+            <div class="flex items-center gap-2">🟢 Sokółka</div>
+            <div class="flex items-center gap-2">🟢 Choroszcz</div>
+            <div class="flex items-center gap-2">🟢 Łapy</div>
+            <div class="flex items-center gap-2">🟢 Bielsk Podlaski</div>
+            <div class="flex items-center gap-2">🟢 Hajnówka</div>
+            <div class="flex items-center gap-2">🟢 Mońki</div>
+          </div>
+
+          <p class="text-xs text-brand-400 font-medium italic">Instalujesz bramę poza wymienionymi miastami? Zadzwoń do nas, a bez problemu uzgodnimy indywidualne warunki dojazdu na montaż!</p>
+        </div>
+
+        <!-- Visual Map outline representation -->
+        <div class="lg:col-span-6">
+          <div class="relative bg-slate-950 p-6 rounded-2xl border border-slate-800 h-[280px] md:h-[350px] flex items-center justify-center overflow-hidden">
+            <!-- Tech backdrop circles representing signal zone -->
+            <div class="absolute w-[220px] h-[220px] border border-brand-500/10 rounded-full animate-ping pointer-events-none"></div>
+            <div class="absolute w-[140px] h-[140px] border border-brand-500/20 rounded-full animate-pulse pointer-events-none"></div>
+            <div class="absolute w-[60px] h-[60px] bg-brand-500/20 rounded-full pointer-events-none"></div>
+            
+            <div class="text-center relative z-10 space-y-3">
+              <span class="text-4xl block leading-none">🛡️</span>
+              <p class="text-xl font-black text-white font-display uppercase tracking-tight leading-none">Promień Szybkich Napędów</p>
+              <p class="text-xs text-slate-400 max-w-xs mx-auto">Obsługujemy całą aglomerację białostocką z gwarancją błyskawicznego serwisu w 24 godziny od awarii.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section id="faq" class="py-24 bg-anthracite-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs text-brand-500 uppercase font-black tracking-widest font-mono">częste pytania</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-1">Najczęściej Zadawane Pytania</h2>
+        <p class="text-slate-400 mt-2 text-sm">Masz pytania dotyczące montażu automatyki? Tutaj znajdziesz merytoryczne i konkretne wyjaśnienia.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ Item 1 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all">
+          <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center focus:outline-none" onclick="toggleFaq(1)" aria-expanded="false">
+            <span class="text-sm sm:text-base leading-tight">Jak dobrać odpowiedni napęd do mojej bramy wjazdowej?</span>
+            <span class="text-brand-500 text-lg md:text-xl font-black" id="faq-icon-1">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-slate-350 text-xs sm:text-sm leading-relaxed" id="faq-ans-1">
+            Dobór zależy od trzech głównych czynników: wagi skrzydeł, szerokości wjazdu oraz rodzaju słupów (stalowe czarne vs klinkier szeroki). Dla bram przesuwnych idealnym wyborem są automaty ze stalową lub cichą listwą zębatą. Nasz ekspert Kamil Rzepniewski analizuje te parametry podczas bezpłatnej wizyty na budowie i dobiera idealne modele chroniące silnik przed przeciążeniem.
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all">
+          <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center focus:outline-none" onclick="toggleFaq(2)" aria-expanded="false">
+            <span class="text-sm sm:text-base leading-tight">Czy kupując u Was otrzymuję autoryzowaną gwarancję producenta?</span>
+            <span class="text-brand-500 text-lg md:text-xl font-black" id="faq-icon-2">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-slate-350 text-xs sm:text-sm leading-relaxed" id="faq-ans-2">
+            Zdecydowanie tak! Bramil to w pełni licencjonowany i autoryzowany instalator kluczowych producentów: Somfy, FAAC oraz Nice. Kupując zestaw z naszym ciepłym montażem, zyskujesz pełne prawo do gwarancji producenckiej, co jest nierealne przy samodzielnym lub amatorskim montażu kupionym w markecie.
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all">
+          <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center focus:outline-none" onclick="toggleFaq(3)" aria-expanded="false">
+            <span class="text-sm sm:text-base leading-tight">Jak zachowuje się automatyka do bram podczas silnych mrozów zimą?</span>
+            <span class="text-brand-500 text-lg md:text-xl font-black" id="faq-icon-3">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-slate-350 text-xs sm:text-sm leading-relaxed" id="faq-ans-3">
+            Nowoczesne napędy FAAC 414 czy Somfy korzystają ze specjalistycznych smarów mrozoodpornych chroniących silnik przed zamarzaniem do -25°C. Kluczem jest jednak prawidłowo wyważona i zakonserwowana brama. Jeśli brama pcha się luźno i lekko bez użycia siły, silnik bez najmniejszego problemu otworzy ją nawet pod pokrywą śnieżną.
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all">
+          <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center focus:outline-none" onclick="toggleFaq(4)" aria-expanded="false">
+            <span class="text-sm sm:text-base leading-tight">Ile czasu trwa montaż nowej bramy garażowej lub automatyki?</span>
+            <span class="text-brand-500 text-lg md:text-xl font-black" id="faq-icon-4">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-slate-350 text-xs sm:text-sm leading-relaxed" id="faq-ans-4">
+            Standardowy montaż napędu do bramy skrzydłowej lub przesuwnej z okablowaniem i programowaniem zajmuje nam około 4-6 godzin roboczych. Montaż segmentowej bramy garażowej trwa przeważnie od 5 do 8 godzin, w zależności od przygotowania otworu ościeżnicy. Dbamy o to, by posesja po naszej pracy pozostała wzorowo wysprzątana.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= KONTAKT & FORMULARZ WYCENY ================= -->
+  <section id="kontakt" class="py-24 bg-slate-900 border-t border-slate-800 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="wycena">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        
+        <!-- Left: contact info details -->
+        <div class="lg:col-span-5 flex flex-col space-y-8">
+          <div class="border-l-4 border-brand-500 pl-4">
+            <span class="text-xs text-brand-500 uppercase font-black tracking-widest font-mono">Darmowy obmiar</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white mt-1">Zarezerwuj Bezpłatny Termin Pomiaru</h2>
+          </div>
+          
+          <p class="text-slate-350 text-sm leading-relaxed">
+            Chcesz dopasować bramę, wymienić sprężyny, czy zamontować cichy napęd do bramy wjazdowej? Wyślij krótki formularz rzutu lub skontaktuj się z Kamilem Rzepniewskim bezpośrednio przez telefon. Dojazd i projekt przygotujemy dla Ciebie w 100% za darmo i niezobowiązująco.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 bg-slate-950/60 p-4 rounded-xl border border-slate-805">
+              <span class="text-2xl">📞</span>
+              <div>
+                <p class="text-[10px] text-slate-500 font-bold uppercase block tracking-wider">Telefon Bezpośredni</p>
+                <a href="tel:+48517988675" class="text-white hover:text-brand-500 font-black text-base transition-colors">+48 517 988 675</a>
+              </div>
+            </div>
+
+            <!-- WhatsApp fast lead -->
+            <div class="flex items-center gap-4 bg-emerald-950/20 p-4 rounded-xl border border-emerald-900/30">
+              <span class="text-2xl">💬</span>
+              <div>
+                <p class="text-[10px] text-emerald-450 font-bold uppercase block tracking-wider">Szybka rozmowa WhatsApp</p>
+                <a href="https://wa.me/48517988675" class="text-white hover:text-emerald-400 font-black text-sm transition-colors">Wyślij wiadomość o wycenę</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-slate-950/60 p-4 rounded-xl border border-slate-805">
+              <span class="text-2xl">📩</span>
+              <div>
+                <p class="text-[10px] text-slate-500 font-bold uppercase block tracking-wider">Napisz na E-mail</p>
+                <a href="mailto:bramilbramy@outlook.com" class="text-white hover:text-brand-500 font-extrabold text-sm transition-colors">bramilbramy@outlook.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Modern Lead Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-anthracite-950 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative" id="contact-form-wrapper">
+            <h3 class="text-xl sm:text-2xl font-bold font-display text-white mb-2">Bezpłatna wycena i darmowy szkic</h3>
+            <p class="text-slate-450 text-xs sm:text-sm mb-6">Zostaw swoje dane – nasz inżynier zadzwoni do Ciebie i umówi optymalny termin obmiaru na posesji.</p>
+
+            <form id="contact-form-action" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-400 mb-1.5" for="form-name">Twoje Imię</label>
+                  <input type="text" id="form-name" required placeholder="np. Jan Rzetelny" class="w-full text-sm p-3.5 bg-slate-900 border border-slate-800 rounded-xl text-slate-100 placeholder:text-slate-700 focus:outline-none focus:border-brand-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-400 mb-1.5" for="form-phone">Numer Telefonu *</label>
+                  <input type="tel" id="form-phone" required placeholder="np. +48 501 XXX XXX" class="w-full text-sm p-3.5 bg-slate-900 border border-slate-800 rounded-xl text-slate-100 placeholder:text-slate-700 focus:outline-none focus:border-brand-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-400 mb-1.5" for="form-location">Lokalizacja Inwestycji</label>
+                <input type="text" id="form-location" placeholder="np. Białystok / Sokółka / Wasilków" class="w-full text-sm p-3.5 bg-slate-900 border border-slate-800 rounded-xl text-slate-100 placeholder:text-slate-700 focus:outline-none focus:border-brand-500">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-400 mb-1.5" for="form-msg">Rodzaj zlecenia / Dodatkowe uwagi</label>
+                <textarea id="form-msg" rows="3" placeholder="np. Chcę zamontować napęd Somfy lo na klinkierze, szerokość skrzydła 4.5m." class="w-full text-sm p-3.5 bg-slate-900 border border-slate-800 rounded-xl text-slate-100 placeholder:text-slate-700 focus:outline-none focus:border-brand-500"></textarea>
+              </div>
+
+              <!-- Rodo Consent -->
+              <div class="flex items-start gap-2.5">
+                <input type="checkbox" required id="form-consent" class="text-brand-500 focus:ring-brand-500 bg-slate-900 border-slate-800 mt-0.5 rounded cursor-pointer">
+                <label for="form-consent" class="text-[10px] text-slate-450 leading-relaxed cursor-pointer select-none">
+                  Wyrażam zgodę na przetwarzanie podanych danych osobowych w celu przygotowania darmowej wyceny i kontaktu handlowego przez firmę BRAMIL Kamil Rzepniewski.
+                </label>
+              </div>
+
+              <button type="submit" class="w-full bg-brand-500 hover:bg-brand-600 text-anthracite-950 font-black py-4 rounded-xl text-sm transition-all shadow-lg shadow-brand-500/20 flex items-center justify-center gap-2 cursor-pointer mt-4">
+                Wyślij Wniosek o Kosztorys
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+            </form>
+
+            <!-- Form success feedback -->
+            <div id="contact-success-overlay" class="hidden absolute inset-0 bg-anthracite-950 rounded-3xl p-6 sm:p-10 flex flex-col justify-center items-center text-center space-y-4">
+              <div class="bg-emerald-500/10 text-emerald-400 p-4 rounded-full border border-emerald-500/20 text-3xl">
+                ✔️
+              </div>
+              <p class="text-2xl font-black text-white">Wiadomość Wysłana!</p>
+              <p class="text-slate-300 text-sm max-w-md">Dziękujemy. Zapytanie zostało przekazane bezpośrednio do Kamila Rzepniewskiego. Oddzwonimy w ciągu kilku chwil!</p>
+              <button onclick="resetContactForm()" class="text-xs text-brand-500 border-b border-brand-500 font-bold uppercase mt-2">
+                Napisz kolejną wiadomość
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 border-t border-slate-850 py-12 relative z-10 text-slate-500 text-xs pb-32 md:pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-850">
+        <div>
+          <span class="text-lg font-black text-white block">BRAMIL</span>
+          <span class="text-[9px] text-brand-500 uppercase font-black tracking-widest block font-mono">AUTOMATYKA I BRAMY KAMIL RZEPNIEWSKI</span>
+        </div>
+        <div class="flex flex-wrap gap-6 text-slate-400 font-semibold">
+          <a href="#o-firmie" class="hover:text-white transition-colors">O nas</a>
+          <a href="#oferta" class="hover:text-white transition-colors">Oferta</a>
+          <a href="#dlaczego-my" class="hover:text-white transition-colors">Dlaczego my</a>
+          <a href="#realizacje" class="hover:text-white transition-colors">Realizacje</a>
+          <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+        </div>
+      </div>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8">
+        <p>&copy; 2426 BRAMIL.pl. Wszelkie prawa zastrzeżone. NIP: 9662121703 • REGON: 381180295</p>
+        <p>Projekt i wdrożenie: <a href="https://leadflow.pl" class="text-slate-400 hover:text-brand-500 font-bold">LeadFlow.pl</a></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================= MOBILE FIXED STICKY ACTION BAR ================= -->
+  <div class="fixed bottom-0 left-0 w-full z-40 bg-slate-900/98 border-t border-slate-800 shadow-2xl grid grid-cols-2 p-3 gap-2 md:hidden">
+    <a href="tel:+48517988675" class="bg-brand-500 text-anthracite-950 text-center py-3.5 rounded-xl font-black text-sm flex items-center justify-center gap-2 shadow-md shadow-brand-500/20">
+      <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.384 17.791l-3.75-2.25a2.251 2.251 0 00-2.617.411l-1.393 1.393a15.176 15.176 0 01-6.98-6.98l1.393-1.393a2.25 2.25 0 00.412-2.617l-2.25-3.75A2.252 2.252 0 003.59 1.5H3a1.5 1.5 0 00-1.5 1.5 19.5 19.5 0 0019.5 19.5 1.5 1.5 0 001.5-1.5v-.59a2.25 2.25 0 00-1.116-2.119z" />
+      </svg>
+      Zadzwoń teraz
+    </a>
+    <a href="#kontakt" class="bg-slate-800 border border-slate-750 text-slate-100 text-center py-3.5 rounded-xl font-extrabold text-sm flex items-center justify-center gap-2">
+      ⚡ Darmowa Wycena
+    </a>
+  </div>
+
+
+  <!-- ================= CLIENT SIDE JAVASCRIPT LOGIC ================= -->
+  <script>
+    // 1. Mobile Menu Toggler
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileDrawer.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Close mobile drawer when clicking any anchor link
+    const drawerLinks = mobileDrawer.querySelectorAll('a');
+    drawerLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileDrawer.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+
+    // 3. Smart Motor Configurator Steps Engine
+    function goToStep(step) {
+      document.getElementById('step-1-container').classList.add('hidden');
+      document.getElementById('step-2-container').classList.add('hidden');
+      document.getElementById('step-3-container').classList.add('hidden');
+
+      document.getElementById(`step-${step}-container`).classList.remove('hidden');
+
+      const progressBar = document.getElementById('config-progress-bar');
+      const stepCounter = document.getElementById('step-counter');
+
+      if (step === 1) {
+        progressBar.style.width = '33.3%';
+        stepCounter.innerText = 'Krok 1 / 3';
+      } else if (step === 2) {
+        progressBar.style.width = '66.6%';
+        stepCounter.innerText = 'Krok 2 / 3';
+      } else if (step === 3) {
+        progressBar.style.width = '100%';
+        stepCounter.innerText = 'Krok 3 / 3';
+        calculateRecommendation();
+      }
+    }
+
+    function calculateRecommendation() {
+      // Simple decision tree based on form values
+      const gateType = document.querySelector('input[name="gateType"]:checked').value;
+      const weightLimit = document.querySelector('input[name="weightLimit"]:checked').value;
+      
+      let title = "SOMFY Elixo Smart (Io-Homecontrol)";
+      let desc = "Płynna i bezgłośna praca z wykrywaniem przeszkód oraz pełną kontrolą na smartfonie. Idealny system do lekkich i średnich bram przesuwnych na Podlasiu.";
+
+      if (gateType === 'sliding') {
+        if (weightLimit === 'heavy') {
+          title = "FAAC 740 - Napęd pancerny stalowy";
+          desc = "Niezrównana mosiężna przekładnia i moc zdolna otworzyć bramę wjazdową o wadze do 500 kg w najgłębszą zaspę śnieżną.";
+        } else {
+          title = "SOMFY Elixo Smart (Io-Homecontrol)";
+          desc = "Szybkie, bezpieczne i bardzo ciche otwieranie dla przydomowych bram przesuwnych.";
+        }
+      } else if (gateType === 'swing') {
+        if (weightLimit === 'heavy') {
+          title = "FAAC 414 - Silnik potężny tubowy (Słupek klinkier)";
+          desc = "Najbardziej bezawaryjny napęd śrubowy na polskim rynku. Olbrzymia siła parcia, idealny na grube murowane bramy klinkierowe.";
+        } else {
+          title = "Somfy SGS / Egress Pro Premium (lo)";
+          desc = "Łagodny rozbieg i hamowanie. Elastyczne ramiona łamane lub teleskopowe o wysokiej odporności wiatrowej.";
+        }
+      } else if (gateType === 'garage') {
+        title = "Somfy Dexxo Optimo RTS (Garaż)";
+        desc = "Do segmentowych bram garażowych. Posiada wbudowaną lampę oświetleniową, natychmiastowe ryglowanie antywłamaniowe oraz mechaniczny stop.";
+      }
+
+      document.getElementById('rec-motor-title').innerText = title;
+    }
+
+    // Configurator Submission handler
+    document.getElementById('configurator-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('calculator-success').classList.remove('hidden');
+    });
+
+    function resetConfigurator() {
+      document.getElementById('calculator-success').classList.add('hidden');
+      goToStep(1);
+    }
+
+    // 4. General Contact Form submission handler
+    document.getElementById('contact-form-action').addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('contact-success-overlay').classList.remove('hidden');
+    });
+
+    function resetContactForm() {
+      document.getElementById('contact-success-overlay').classList.add('hidden');
+      document.getElementById('contact-form-action').reset();
+    }
+
+    // 5. FAQ Accordion Toggler
+    function toggleFaq(index) {
+      const ans = document.getElementById(`faq-ans-${index}`);
+      const icon = document.getElementById(`faq-icon-${index}`);
+      
+      ans.classList.toggle('hidden');
+      
+      const isExpanded = !ans.classList.contains('hidden');
+      icon.innerText = isExpanded ? '−' : '+';
+      icon.classList.toggle('text-brand-500', !isExpanded);
+      icon.classList.toggle('text-slate-400', isExpanded);
+    }
+
+    // Header opacity change on scroll
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('sticky-header');
+      if (window.scrollY > 50) {
+        header.classList.add('bg-anthracite-950', 'shadow-xl');
+        header.classList.remove('bg-anthracite-950/85');
+      } else {
+        header.classList.add('bg-anthracite-950/85');
+        header.classList.remove('bg-anthracite-950', 'shadow-xl');
+      }
+    });
+
+  </script>
+</body>
+</html>
